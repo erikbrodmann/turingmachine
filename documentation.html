@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- Intro.js -->
+	<link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+
+	<!-- Javascript Function -->
+	<script type="text/javascript" src="script.js"></script>
+
+	<title>Documentation</title>
+
+</head>
+	<body>
+	<!-- Fixierte Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+		<div class="container-fluid">
+			<a class="navbar-brand" style="font-size: 25px" href="#">Documentation</a>
+			<div class="nav justify-content-end" id="navbarRightContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a onclick="window.location.href = 'index.html';" href="index.html" class="nav-link" id="nav2" style="font-size: 20px">Back</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">Embedded Reber Grammar</div>
+						</div>
+					<div class="card-body">
+						<p id="p1" class="card-text">Simulieren und visualisieren Sie eine Turing Maschine (TM) die die (ERG) mit so wenig Zuständen wie möglich entscheidet.</p>
+						<p class="card-text">Die TM soll nicht nur einen DEA zur ERG Erkennung nachbilden.</p>
+						<p class="card-text">Sie sollen eine einfachere Lösung finden, die mit einem DEA nicht realisierbar ist.</p>
+						<a class="card-text" href="https://willamette.edu/~gorr/classes/cs449/reber.html#top">material: https://willamette.edu/~gorr/classes/cs449/reber.html#top</a>
+						<!--<p id="p1" class="card-text">Simulate and visualize a Turing Machine (TM) that decides the Embedded Reber Grammar (ERG) with as few states as possible.</p>
+						<p class="card-text">The TM is not only to emulate a DEA to the ERG.</p>
+						<p class="card-text">They are to find a simpler solution that is not feasible with a DEA.</p>
+						<a class="card-text" href="https://willamette.edu/~gorr/classes/cs449/reber.html#top">material: https://willamette.edu/~gorr/classes/cs449/reber.html#top</a>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">logic</div>
+						</div>
+					<div class="card-body">
+						<p class="card-text">Ich verwende die js Funktion push und random, um ein Array mit den gültigen Σ-Zeichen zu erstellen.</p>
+						<!--<p class="card-text">I use the javscript .push and random functions to create an array with the valid Σ characters.</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">rules</div>
+						<div class="card-body">
+							<code style="color: white">
+								let goodL = ["B","T","P","S","X","V","E"]<br>
+								<br>
+								function checkWord() {<br>
+								for(let i = 0; i < input.value.length; i++) {<br>
+								if(goodL.includes(input.value.charAt(m))) continue;<br>
+								else return false; }<br>
+								return true; }<br>
+							</code>
+						</div>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Die eingegebenen und generierten Zeichen werden dann überprüft.</p>
+						<!--<p class="card-text">The entered and generated characters are then checked.</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">animation</div>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Die generierten und manuellen Ausdrücke werden dann mit switch-case geprüft und mit d3 und anime.js Funktionen verarbeitet.</p>
+						<!--<p class="card-text">The generated and manually entered expressions are then checked with switch-case and processed with d3 and anime.js functions.</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">terminating</div>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Wenn alle Zeichen abgearbeitet wurden und der Graph q7 erreicht hat, terminiert die Turingmaschine.</p>
+						<!--<p class="card-text">When all characters have been processed and the graph has reached q7, the turing machine terminates.</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col-12">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">buttons</div>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Alle Buttons werden je nach Verarbeitungszustand mit jQuery-Funktionen aktiviert oder deaktiviert.</p>
+						<!--<p class="card-text">all buttons are enabled or disabled depending on the state of processing with jQuery functions</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col-12">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">intro.js</div>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Wurde für das Tutorial verwendet.</p>
+						<!--<p class="card-text">was used for the tutorial</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col-12">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">anime.js</div>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Wurde für die Header Animationen verwendet.</p>
+						<!--<p class="card-text">was used for the header animations</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col-12">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">jQuery</div>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Wurde für intelligentere Funktionen in js verwendet.</p>
+						<!--<p class="card-text">was used for more intelligence in javascript</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col-12">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">d3</div>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Wurde für SVG insertion und remove Funktionen verwendet.</p>
+						<!--<p class="card-text">was used for insertion and remove functions on the svg</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col-12">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">Bootstrap5</div>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Wurde für das styling verwendet.</p>
+						<!--<p class="card-text">was used for the styling</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<!-- Card -->
+	<div class="container">
+		<div class="col-12">
+			<div class="row justify-content-center">
+				<div class="card">
+					<div class="card text-white bg-dark" style="width: 64rem">
+						<div class="card-header">Popper.js</div>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Wurde für die tooltips verwendet.</p>
+						<!--<p class="card-text">was used for tooltips</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	</body>
+</html>
