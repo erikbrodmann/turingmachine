@@ -1,1 +1,31 @@
 .btn:active{box-shadow: 0 5px gray; transform: translateY(2px);}.btn:hover{transform: translateY(2px);}
+@media (min-aspect-ratio: 1/1) and (min-width: 1024px) {
+  #mobile{
+    display: none;
+    visibility: hidden;
+  }
+  #mobile-text{
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-aspect-ratio: 1/1), (max-width: 1024px) {
+  #mobile{
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #mobile-text{
+    color: black;
+    font-size: 6vw;
+    line-height: 1.1;
+    text-align: center;
+    top: calc(45vh - 1em);
+    position: relative;
+  }
+}
